@@ -1,6 +1,5 @@
 import Image from "next/image"
-
-export const Footer = () => {
+ const Footer = () => {
     return (
         <div className="footer text-mute w-100">
           <div className="container text-center">
@@ -23,3 +22,5 @@ export const Footer = () => {
     )
     
 }
+
+export default Footer;

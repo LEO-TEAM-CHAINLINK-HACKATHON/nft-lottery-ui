@@ -1,9 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../public/vercel.svg"
 import {HiOutlineTicket} from "react-icons/hi"
 
-export const About = (params) => {
+const About = (params) => {
   return (
     <div className="section">
       <div className="container text-center text-white mt-4" id="/about">
@@ -36,3 +35,4 @@ export const About = (params) => {
     </div>
   );
 };
+export default About;

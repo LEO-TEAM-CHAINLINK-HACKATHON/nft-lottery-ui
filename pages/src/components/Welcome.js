@@ -1,7 +1,7 @@
 import { ConnectButton } from "web3uikit";
 import { FaSmile } from "react-icons/fa";
 
-export const Welcome = ({ isWeb3Enabled }) => {
+const Welcome = ({ isWeb3Enabled }) => {
   return (
     <div className="section">
       <div className="container">
@@ -27,3 +27,5 @@ export const Welcome = ({ isWeb3Enabled }) => {
     </div>
   );
 };
+
+export default Welcome; 

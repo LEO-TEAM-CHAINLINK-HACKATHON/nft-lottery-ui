@@ -2,7 +2,8 @@ import Head from "next/head";
 import React from "react";
 import   Navbar   from "./src/components/Navbar";
 import { useMoralis } from "react-moralis";
-import { Footer }from "./Footer";
+import  Welcome  from "./src/components/Welcome"
+import Footer from "./Footer";
 
 
 const Layout = ({children}) => {
@@ -24,6 +25,7 @@ const Layout = ({children}) => {
         }
          </header>
          <main className="main">
+        <Welcome isWeb3Enabled={isWeb3Enabled} />
         {children}
         </main>
         </div>
