@@ -1,16 +1,22 @@
-.container {
-  padding: 0 2rem;
-}
+
 
 .main {
-  min-height: 100vh;
   padding: 4rem 0;
-  flex: 1;
+  flex: 1 0 auto;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+} 
+
+.gDkHDj {
+    justify-content: center;
+   
 }
+.sc-lbxAil {
+  margin-top: 2em !important;
+}
+
+
 
 .footer {
   display: flex;
@@ -19,6 +25,9 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  height: 40px;
+  width: 100%;
+  
 }
 
 .footer a {
@@ -26,6 +35,8 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  text-decoration: none;
+  color: #000
 }
 
 
