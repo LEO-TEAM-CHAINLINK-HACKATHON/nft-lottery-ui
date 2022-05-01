@@ -1,11 +1,8 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import { useMoralis } from "react-moralis";
-import { About } from "./About"
-import { Welcome } from './src/components/Welcome'
+import  About  from "./About"
 
 
-export default function Home() {
+ const Home = () => {
   const { isWeb3Enabled } = useMoralis()
 
   return (
@@ -16,3 +13,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default Home;
