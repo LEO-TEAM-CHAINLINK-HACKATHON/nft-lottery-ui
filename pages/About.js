@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import {HiOutlineTicket} from "react-icons/hi"
 
-const About = (params) => {
+function About () {
   return (
     <div className="section">
       <div className="container text-center text-white mt-4" id="/about">

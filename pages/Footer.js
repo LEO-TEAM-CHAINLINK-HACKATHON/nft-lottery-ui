@@ -1,5 +1,5 @@
 import Image from "next/image"
- const Footer = () => {
+ function Footer  ()  {
     return (
         <div className="footer text-mute w-100">
           <div className="container text-center">

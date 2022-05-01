@@ -1,7 +1,7 @@
 import { ConnectButton } from "web3uikit";
-import { FaSmile } from "react-icons/fa";
+import { FaSmile } from "react-icons/fa"
 
-const Welcome = ({ isWeb3Enabled }) => {
+function Welcome  ({ isWeb3Enabled }) {
   return (
     <div className="section">
       <div className="container">
