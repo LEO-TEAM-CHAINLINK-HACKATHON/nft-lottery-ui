@@ -1,6 +1,6 @@
 import Image from "next/image"
 const myLoader = ({ src, width, quality }) => {
-  return `https://wild-dream-9169.on.fleek.co/${src}?w=${width}&q=${quality || 75}`;
+  return `${src}?w=${width}&q=${quality || 75}`;
 };
 
 function Footer  ()  {
