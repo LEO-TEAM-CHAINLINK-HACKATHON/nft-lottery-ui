@@ -19,10 +19,14 @@ function Welcome  ({ isWeb3Enabled }) {
             </span>
           </h3>
         )}
+        <div className="d-flex justify-content-center">
         <ConnectButton
           className="moralis-btn"
           moralisAuth={false}
-        ></ConnectButton>
+        >
+          
+        </ConnectButton>
+        </div>
       </div>
     </div>
   );
