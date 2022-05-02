@@ -1,7 +1,10 @@
 import Image from "next/image";
 import moto from "../public/SLV4-01-Model-Preview-1050x650.png.svg";
 
- const Waffles = (params) => {
+const myLoader = ({ src, width, quality }) => {
+    return `${src}?w=${width}&q=${quality || 75}`;
+  };
+ const Waffles = () => {
     return (
         <div className="section waffle">
             <div className="container">
@@ -12,7 +15,7 @@ import moto from "../public/SLV4-01-Model-Preview-1050x650.png.svg";
                     <div className="col-lg-6 bg-dark">
                         <div className="container-fluid">
 
-                        <Image src={moto} alt="prize" height={1000} layout="responsive" width={1200} />
+                        <Image src={moto} alt="prize" height={1000} layout="responsive" width={1200} loader={myLoader} />
                         </div>
                     </div>
                     <div className="col-md-6 col-lg-6">

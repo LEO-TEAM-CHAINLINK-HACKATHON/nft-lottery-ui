@@ -1,5 +1,9 @@
 import Image from "next/image"
- function Footer  ()  {
+const myLoader = ({ src, width, quality }) => {
+  return `${src}?w=${width}&q=${quality || 75}`;
+};
+
+function Footer  ()  {
     return (
         <div className="footer text-mute w-100">
           <div className="container text-center">
@@ -12,7 +16,7 @@ import Image from "next/image"
         >
           Powered by{''}
           <span className="logo">
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} loader={myLoader} />
           </span>
         </a>
             </div>

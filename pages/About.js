@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import {HiOutlineTicket} from "react-icons/hi"
 
 function About () {
