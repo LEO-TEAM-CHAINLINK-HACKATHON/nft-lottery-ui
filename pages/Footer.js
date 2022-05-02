@@ -1,4 +1,5 @@
 import Image from "next/image"
+import logo from "./public/vercel.svg"
 const myLoader = ({ src }) => {
   return `${src}`;
 };
@@ -17,7 +18,7 @@ function Footer  ()  {
           Powered by{''}
           <span className="logo">
             <Image 
-            src="/vercel.svg" 
+            src={logo} 
             alt="Vercel Logo" 
             width={72} height={16} 
             loader={myLoader} 
