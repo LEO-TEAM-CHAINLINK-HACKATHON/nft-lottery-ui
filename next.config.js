@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const path = require('path')
+const withImages = require('next-images')
 
-const nextConfig = {
+const nextConfig = withImages({
   reactStrictMode: true,
   trailingSlash: true,
   exportPathMap: function () {
@@ -34,6 +35,6 @@ images: {
       },
     ],
   },
-}
+})
 
 module.exports = nextConfig
