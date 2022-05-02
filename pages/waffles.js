@@ -15,7 +15,13 @@ const myLoader = ({ src, width, quality }) => {
                     <div className="col-lg-6 bg-dark">
                         <div className="container-fluid">
 
-                        <Image src={moto} alt="prize" height={1000} layout="responsive" width={1200} loader={myLoader} />
+                        <Image 
+                        src={moto} 
+                        alt="prize" 
+                        height={1000} 
+                        layout="responsive" 
+                        width={1200} 
+                        loader={myLoader} />
                         </div>
                     </div>
                     <div className="col-md-6 col-lg-6">
