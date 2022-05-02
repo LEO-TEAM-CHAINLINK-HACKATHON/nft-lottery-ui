@@ -16,7 +16,12 @@ function Footer  ()  {
         >
           Powered by{''}
           <span className="logo">
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} loader={myLoader} />
+            <Image 
+            src="/vercel.svg" 
+            alt="Vercel Logo" 
+            width={72} height={16} 
+            //loader={myLoader} 
+            />
           </span>
         </a>
             </div>

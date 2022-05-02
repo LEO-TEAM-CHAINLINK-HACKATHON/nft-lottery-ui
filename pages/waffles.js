@@ -21,7 +21,8 @@ const myLoader = ({ src, width, quality }) => {
                         height={1000} 
                         layout="responsive" 
                         width={1200} 
-                        loader={myLoader} />
+                        //loader={myLoader} 
+                        />
                         </div>
                     </div>
                     <div className="col-md-6 col-lg-6">
