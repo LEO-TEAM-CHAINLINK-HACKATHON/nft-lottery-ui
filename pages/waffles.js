@@ -1,8 +1,8 @@
 import Image from "next/image";
 import moto from "./public/SLV4-01-Model-Preview-1050x650.png.svg";
 
-const myLoader = ({ src, width, quality }) => {
-    return `${src}?w=${width}&q=${quality || 75}`;
+const myLoader = ({ src }) => {
+    return `${src}`;
   };
  const Waffles = () => {
     return (
@@ -21,7 +21,7 @@ const myLoader = ({ src, width, quality }) => {
                         height={1000} 
                         layout="responsive" 
                         width={1200} 
-                        //loader={myLoader} 
+                        loader={myLoader} 
                         />
                         </div>
                     </div>

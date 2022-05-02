@@ -1,6 +1,6 @@
 import Image from "next/image"
-const myLoader = ({ src, width, quality }) => {
-  return `${src}?w=${width}&q=${quality || 75}`;
+const myLoader = ({ src }) => {
+  return `${src}`;
 };
 
 function Footer  ()  {
@@ -20,7 +20,7 @@ function Footer  ()  {
             src="/vercel.svg" 
             alt="Vercel Logo" 
             width={72} height={16} 
-            //loader={myLoader} 
+            loader={myLoader} 
             />
           </span>
         </a>
