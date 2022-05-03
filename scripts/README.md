@@ -1,0 +1,1 @@
+This dir is for smart contract scripts (compile, deploy etc), delete it when adding new file

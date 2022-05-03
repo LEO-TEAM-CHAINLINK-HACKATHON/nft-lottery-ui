@@ -30,3 +30,12 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# For brownie
+__pycache__
+.env
+.history
+.hypothesis/
+build/
+reports/
+

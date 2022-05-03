@@ -1,0 +1,1 @@
+This dir is for smart contract testing, delete it when adding new file
