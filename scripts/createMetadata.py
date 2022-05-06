@@ -9,23 +9,38 @@ import requests
 classes = ["KING", "KNIGHT", "PRINCESS"]
 number_of_classes = len(classes)
 classes_mapping = {0: "KING", 1: "KNIGHT", 2: "PRINCESS"}
+attribution = {
+    0: "Designed by macrovector / Freepik",
+    1: "Knight vector created by catalyststuff - www.freepik.com",
+    2: "Princess cartoon vector created by brgfx - www.freepik.com",
+}
 
 
 def main():
-    print(number_of_classes)
-    print(classes_mapping[1])
+    createMetadata()
+    print(classes[1])
+
+
+def createMetadata():
     for class_id in range(number_of_classes):
         metadata_file_name = f"./metadata/{network.show_active()}/{class_id}-{classes_mapping[class_id]}.json"
-        print(metadata_file_name)
         NFT_metadata = metadata_template
         if Path(metadata_file_name).exists():
             print(f"{metadata_file_name} already exists! Delete it to overwrite")
         else:
             print(f"Creating metadata file:{metadata_file_name}")
             NFT_metadata["name"] = classes_mapping[class_id]
-            NFT_metadata["description"] = f"This is a {classes_mapping[class_id]} class"
+            NFT_metadata[
+                "description"
+            ] = f"This is a {classes_mapping[class_id]} class. {attribution[class_id]}."
             image_path = "./img/" + classes_mapping[class_id].lower() + ".png"
-            NFT_metadata["image"] = image_path
+
+            image_uri = None
+            if os.getenv("UPLOAD_IPFS") == "true":
+                image_uri = upload_to_ipfs(image_path)
+            image_uri = image_uri if image_uri else None
+
+            NFT_metadata["image"] = image_uri
             with open(metadata_file_name, "w") as file:
                 json.dump(NFT_metadata, file)
             if os.getenv("UPLOAD_IPFS") == "true":

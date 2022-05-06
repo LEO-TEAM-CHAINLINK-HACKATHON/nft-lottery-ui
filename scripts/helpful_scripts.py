@@ -5,6 +5,7 @@ def main():
     get_account()
 
 
+OPENSEA_URL = "https://testnets.opensea.io/assets/{}/{}"
 LOCAL_BLOCKCHAIN_ENVIRONMENTS = ["hardhat", "development", "ganache", "mainnet-fork"]
 
 
