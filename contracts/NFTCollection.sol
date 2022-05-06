@@ -45,6 +45,10 @@ contract NFTCollection is
         _setTokenURI(tokenId, uri);
     }
 
+    function retrieveTokenId() public view returns (uint256) {
+        return uint256(_tokenIdCounter.current());
+    }
+
     function _beforeTokenTransfer(
         address from,
         address to,
