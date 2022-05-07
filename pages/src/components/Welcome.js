@@ -21,7 +21,7 @@ function Welcome  ({ isWeb3Enabled }) {
         )}
         <div className="d-flex justify-content-center">
         <ConnectButton
-          className="moralis-btn"
+
           moralisAuth={false}
         >
           
