@@ -1,13 +1,10 @@
 import Head from "next/head";
 import React from "react";
-import   Navbar   from "./src/components/Navbar";
-import { useMoralis } from "react-moralis";
-import  Welcome  from "./src/components/Welcome"
+import Navbar from "./src/components/Navbar";
 import Footer from "./Footer";
 
 
 const Layout = ({children}) => {
-    const { isWeb3Enabled } = useMoralis()
     return (
         <React.StrictMode>
         <Head>
@@ -18,14 +15,10 @@ const Layout = ({children}) => {
         <div className="container">
 
          <header>
-         {isWeb3Enabled ?
            <Navbar />
-           :
-           null
-        }
          </header>
          <main className="main">
-        <Welcome isWeb3Enabled={isWeb3Enabled} />
+    
         {children}
         </main>
         </div>
