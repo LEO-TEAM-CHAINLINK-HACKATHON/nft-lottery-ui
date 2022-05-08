@@ -1,6 +1,6 @@
 import { useMoralis } from "react-moralis";
 import  About  from "./About"
-import { CarouselItem } from "./src/components/Carousel";
+import CarouselItem  from "./src/components/Carousel";
 
 
  const Home = () => {
