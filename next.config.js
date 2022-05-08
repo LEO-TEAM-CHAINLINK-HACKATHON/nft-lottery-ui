@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const path = require('path')
+// @ts-ignore
 const withImages = require('next-images')
 
 const nextConfig = withImages({
