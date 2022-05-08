@@ -52,8 +52,7 @@ const myLoader = ({ src }) => {
   </Carousel.Item>
   <Carousel.Item>
   <Image
-    fill="white"
-
+   fill="white"
    alt="prize"
    className="d-block w-100"
    layout="responsive"
