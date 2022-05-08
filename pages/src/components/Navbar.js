@@ -12,7 +12,7 @@ function Navbar() {
           <span className="pe-2">
             <HiOutlineTicket
               className="fs-1 fa-rotate text-white"
-              fill="#833ab4"
+              fill="#00d4ff"
             />{" "}
           </span>
           The Raffle House

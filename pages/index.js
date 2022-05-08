@@ -1,5 +1,6 @@
 import { useMoralis } from "react-moralis";
 import  About  from "./About"
+import { CarouselItem } from "./src/components/Carousel";
 
 
  const Home = () => {
@@ -7,9 +8,9 @@ import  About  from "./About"
 
   return (
     <div className="container mt-4">
-      {
-        isWeb3Enabled && <About />
-      }
+    <CarouselItem />
+    <About />
+    
     </div>
   )
 }

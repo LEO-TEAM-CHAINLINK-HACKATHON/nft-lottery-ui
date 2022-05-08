@@ -9,7 +9,7 @@ function About () {
       </div>
       <div className="container">
         <div className="px-4 text-center text-white">
-        <HiOutlineTicket className="fs-1 fa-rotate" fill="#833ab4" />
+        <HiOutlineTicket className="fs-1 fa-rotate" fill="#00d4ff" />
           <h1 className="display-5 fw-bold">
             Amazing Give Aways To Win At Each Draft
           </h1>
@@ -24,7 +24,7 @@ function About () {
                   className="btn btn-light rounded-pill fw-bold fs-3 font-weight-4 btn-lg px-4 gap-3"
                   type="button"
                 >
-                  <a style={{color:"#833ab4"}}>How To Play</a>
+                  <a style={{color:"#00d4ff"}}>How To Play</a>
                 </button>
               </Link>
             </div>
