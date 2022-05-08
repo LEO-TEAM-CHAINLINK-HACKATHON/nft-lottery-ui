@@ -11,7 +11,7 @@ function Welcome  ({ isWeb3Enabled }) {
       </div>
       <div className="section text-center mt-2">
         {isWeb3Enabled && (
-          <h3 className="text-center text-white">
+          <h3 className="text-white">
             Welcome
             <span>
               {" "}
@@ -20,9 +20,8 @@ function Welcome  ({ isWeb3Enabled }) {
           </h3>
         )}
         <div
-        className="text-center"
+        className="mt-2"
         >
-
         <ConnectButton
           moralisAuth={false}
         />
