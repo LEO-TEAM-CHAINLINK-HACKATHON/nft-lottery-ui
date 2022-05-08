@@ -3,6 +3,7 @@ import bike from "../../public/SLV4-01-Model-Preview-1050x650.png.svg"
 import art1 from "../../public/image2vector.svg"
 import art2 from "../../public/image2vector (1).svg"
 import art3 from "../../public/image2vector (3).svg"
+import art4 from "../../public/vectordesign (4).svg"
 import Carousel from "react-bootstrap/Carousel"
 
 const myLoader = ({ src }) => {
@@ -58,6 +59,18 @@ const myLoader = ({ src }) => {
    layout="responsive"
    loader={myLoader}
    src={art3}
+   height={500}
+   width={750} />
+  
+  </Carousel.Item>
+  <Carousel.Item>
+  <Image
+   
+   alt="prize"
+   className="d-block w-100"
+   layout="responsive"
+   loader={myLoader}
+   src={art4}
    height={500}
    width={750} />
   
