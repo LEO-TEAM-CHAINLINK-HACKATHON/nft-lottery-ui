@@ -5,7 +5,7 @@ import Carousel from "react-bootstrap/Carousel"
 const myLoader = ({ src }) => {
     return `${src}`;
   };
-export const CarouselItem = () => {
+ const CarouselItem = () => {
     return (
     <div className="section mt-4">
     <div className="container">
@@ -57,3 +57,5 @@ export const CarouselItem = () => {
       </div>
     )
 }
+
+export default CarouselItem;
