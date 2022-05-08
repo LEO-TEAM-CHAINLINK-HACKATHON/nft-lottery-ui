@@ -19,15 +19,15 @@ function Welcome  ({ isWeb3Enabled }) {
             </span>
           </h3>
         )}
+      
+      </div>
         <div
-        className="mt-2"
+        className="mt-2 text-center"
         >
         <ConnectButton
           moralisAuth={false}
         />
         </div>
-      
-      </div>
     </div>
   );
 };
