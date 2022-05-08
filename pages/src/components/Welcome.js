@@ -9,9 +9,7 @@ function Welcome  ({ isWeb3Enabled }) {
           The Raffle House
         </h1>
       </div>
-      <div className="section  mt-2">
-        <container>
-
+      <div className="section text-center mt-2">
         {isWeb3Enabled && (
           <h3 className="text-white">
             Welcome
@@ -22,11 +20,13 @@ function Welcome  ({ isWeb3Enabled }) {
           </h3>
         )}
       
+        <div
+        className="mt-2 d-flex justicy-content-center"
+        >
         <ConnectButton
           moralisAuth={false}
         />
-        
-        </container>
+        </div>
       </div>
     </div>
   );
