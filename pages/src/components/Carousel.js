@@ -16,6 +16,7 @@ const myLoader = ({ src }) => {
   <Carousel>
   <Carousel.Item interval={1000}>
    <Image
+   priority
    alt="prize"
    layout="responsive"
    className="d-block w-100"

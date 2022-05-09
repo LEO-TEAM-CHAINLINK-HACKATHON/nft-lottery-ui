@@ -20,13 +20,13 @@ function Welcome  ({ isWeb3Enabled }) {
           </h3>
         )}
       
-        {/* <div
+        <div
         className="mt-2 d-flex justify-content-center"
-        > */}
+        >
         <ConnectButton
           moralisAuth={false}
         />
-        {/* </div> */}
+         </div>
       </div>
     </div>
   );
