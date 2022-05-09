@@ -27,12 +27,13 @@ const FeatBanner = () => {
                 <p>
                     Superleggera (Italian for Superlight) is a custom tube and alloy panel automobile coachwork construction technology developed by Felice Bianchi Anderloni of Italian coachbuilder Carrozzeria Touring Superleggera. A separate chassis was still required.
                 </p>
-                <div className="container d-flex justify-content-between flex-start">
-                    <span className="badge badge-pill fs-5 badge-success text-dark">Tickets: 300
+                <div className=" d-flex justif-content-around flex-column flex-wrap">
+
+                    <span className="badge badge-pill fs-5 m-2 badge-success text-dark">Tickets: 300
                     </span>
-                    <span className="badge badge-pill fs-5 badge-success text-dark">Price:tbc
+                    <span className="badge badge-pill fs-5 m-2 badge-success text-dark">Price:tbc
                     </span>
-                    <span className="badge badge-pill fs-5 bg-success badge-success text-dark">RafNFT price: 50%
+                    <span className="badge badge-pill fs-5 m-2 bg-success badge-success text-dark">RafNFT price: 50%
                     </span>
                 </div>
             </div>
