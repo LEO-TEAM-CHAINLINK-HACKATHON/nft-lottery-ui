@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { HiOutlineTicket } from "react-icons/hi";
+import {useState} from "react";
 
 function Navbar() {
+    const [show, setShow] = useState(false);
   return (
     <nav
       className="navbar navbar-expand-md navbar-dark bg-dark fixed-top"
@@ -18,6 +20,7 @@ function Navbar() {
           The Raffle House
         </a>
         <button
+          onClick={ ()=> setShow(!show) }
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -28,19 +31,19 @@ function Navbar() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarResponsive">
-          <ul className="navbar-nav ms-auto">
-            <Link href="/" passHref className="nav-item">
-              <a className="nav-link">Home</a>
+        <div className={show ? "collapse navbar-collapse show": "collapse navbar-collapse" } id="navbarResponsive">
+          <ul className="navbar-nav ms-auto d-flex align-items-center">
+            <Link href="/" passHref className="nav-item" >
+              <a className="nav-link"  onClick={ ()=> setShow(!show) }>Home</a>
             </Link>
             <Link href="/waffles" passHref className="nav-item">
-              <a className="nav-link">Raffles</a>
+              <a className="nav-link"  onClick={ ()=> setShow(!show) }>Raffles</a>
             </Link>
             <Link className="nav-item" href="/games">
-              <a className="nav-link">Games</a>
+              <a className="nav-link"  onClick={ ()=> setShow(!show) }>Games</a>
             </Link>
             <Link className="nav-item" href="/how-to-play">
-              <a className="nav-link">How To Play</a>
+              <a className="nav-link"  onClick={ ()=> setShow(!show) }>How To Play</a>
             </Link>
             <Link className="nav-item" href="/#about">
               <a className="nav-link">About</a>
