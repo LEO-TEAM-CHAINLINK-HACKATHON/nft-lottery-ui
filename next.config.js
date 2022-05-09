@@ -13,6 +13,9 @@ const nextConfig = withImages({
 },
 sassOptions: {
   includePaths: [path.join(__dirname, 'styles')],
+  compiler: {
+    styledComponents: true,
+  },
 },
 images: {
   loader: "custom",
