@@ -1,0 +1,1337 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint64",
+          "name": "subId",
+          "type": "uint64"
+        }
+      ],
+      "name": "acceptSubscriptionOwnerTransfer",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint64",
+          "name": "subId",
+          "type": "uint64"
+        },
+        {
+          "internalType": "address",
+          "name": "consumer",
+          "type": "address"
+        }
+      ],
+      "name": "addConsumer",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint64",
+          "name": "subId",
+          "type": "uint64"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        }
+      ],
+      "name": "cancelSubscription",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "createSubscription",
+      "outputs": [
+        {
+          "internalType": "uint64",
+          "name": "subId",
+          "type": "uint64"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getRequestConfig",
+      "outputs": [
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        },
+        {
+          "internalType": "bytes32[]",
+          "name": "",
+          "type": "bytes32[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint64",
+          "name": "subId",
+          "type": "uint64"
+        }
+      ],
+      "name": "getSubscription",
+      "outputs": [
+        {
+          "internalType": "uint96",
+          "name": "balance",
+          "type": "uint96"
+        },
+        {
+          "internalType": "uint64",
+          "name": "reqCount",
+          "type": "uint64"
+        },
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "internalType": "address[]",
+          "name": "consumers",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint64",
+          "name": "subId",
+          "type": "uint64"
+        },
+        {
+          "internalType": "address",
+          "name": "consumer",
+          "type": "address"
+        }
+      ],
+      "name": "removeConsumer",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "keyHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint64",
+          "name": "subId",
+          "type": "uint64"
+        },
+        {
+          "internalType": "uint16",
+          "name": "minimumRequestConfirmations",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint32",
+          "name": "callbackGasLimit",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "numWords",
+          "type": "uint32"
+        }
+      ],
+      "name": "requestRandomWords",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "requestId",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint64",
+          "name": "subId",
+          "type": "uint64"
+        },
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "requestSubscriptionOwnerTransfer",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "17": "/home/blackyinsol/.brownie/packages/smartcontractkit/chainlink-brownie-contracts@0.4.1/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol"
+  },
+  "ast": {
+    "absolutePath": "/home/blackyinsol/.brownie/packages/smartcontractkit/chainlink-brownie-contracts@0.4.1/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol",
+    "exportedSymbols": {
+      "VRFCoordinatorV2Interface": [
+        484
+      ]
+    },
+    "id": 485,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 397,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:17"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "VRFCoordinatorV2Interface",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 484,
+        "linearizedBaseContracts": [
+          484
+        ],
+        "name": "VRFCoordinatorV2Interface",
+        "nameLocation": "67:25:17",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 398,
+              "nodeType": "StructuredDocumentation",
+              "src": "97:267:17",
+              "text": " @notice Get configuration relevant for making requests\n @return minimumRequestConfirmations global min for request confirmations\n @return maxGasLimit global max for request gas limit\n @return s_provingKeyHashes list of registered key hashes"
+            },
+            "functionSelector": "00012291",
+            "id": 408,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getRequestConfig",
+            "nameLocation": "376:16:17",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 399,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "392:2:17"
+            },
+            "returnParameters": {
+              "id": 407,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 401,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 408,
+                  "src": "437:6:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 400,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "437:6:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 403,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 408,
+                  "src": "451:6:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 402,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "451:6:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 406,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 408,
+                  "src": "465:16:17",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
+                    "typeString": "bytes32[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 404,
+                      "name": "bytes32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "465:7:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "id": 405,
+                    "nodeType": "ArrayTypeName",
+                    "src": "465:9:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                      "typeString": "bytes32[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "429:58:17"
+            },
+            "scope": 484,
+            "src": "367:121:17",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 409,
+              "nodeType": "StructuredDocumentation",
+              "src": "492:1511:17",
+              "text": " @notice Request a set of random words.\n @param keyHash - Corresponds to a particular oracle job which uses\n that key for generating the VRF proof. Different keyHash's have different gas price\n ceilings, so you can select a specific one to bound your maximum per request cost.\n @param subId  - The ID of the VRF subscription. Must be funded\n with the minimum subscription balance required for the selected keyHash.\n @param minimumRequestConfirmations - How many blocks you'd like the\n oracle to wait before responding to the request. See SECURITY CONSIDERATIONS\n for why you may want to request more. The acceptable range is\n [minimumRequestBlockConfirmations, 200].\n @param callbackGasLimit - How much gas you'd like to receive in your\n fulfillRandomWords callback. Note that gasleft() inside fulfillRandomWords\n may be slightly less than this amount because of gas used calling the function\n (argument decoding etc.), so you may need to request slightly more than you expect\n to have inside fulfillRandomWords. The acceptable range is\n [0, maxGasLimit]\n @param numWords - The number of uint256 random values you'd like to receive\n in your fulfillRandomWords callback. Note these numbers are expanded in a\n secure way by the VRFCoordinator from a single random value supplied by the oracle.\n @return requestId - A unique identifier of the request. Can be used to match\n a request to a response in fulfillRandomWords."
+            },
+            "functionSelector": "5d3b1d30",
+            "id": 424,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "requestRandomWords",
+            "nameLocation": "2015:18:17",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 420,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 411,
+                  "mutability": "mutable",
+                  "name": "keyHash",
+                  "nameLocation": "2047:7:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 424,
+                  "src": "2039:15:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 410,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2039:7:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 413,
+                  "mutability": "mutable",
+                  "name": "subId",
+                  "nameLocation": "2067:5:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 424,
+                  "src": "2060:12:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 412,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2060:6:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 415,
+                  "mutability": "mutable",
+                  "name": "minimumRequestConfirmations",
+                  "nameLocation": "2085:27:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 424,
+                  "src": "2078:34:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 414,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2078:6:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 417,
+                  "mutability": "mutable",
+                  "name": "callbackGasLimit",
+                  "nameLocation": "2125:16:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 424,
+                  "src": "2118:23:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 416,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2118:6:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 419,
+                  "mutability": "mutable",
+                  "name": "numWords",
+                  "nameLocation": "2154:8:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 424,
+                  "src": "2147:15:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 418,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2147:6:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2033:133:17"
+            },
+            "returnParameters": {
+              "id": 423,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 422,
+                  "mutability": "mutable",
+                  "name": "requestId",
+                  "nameLocation": "2193:9:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 424,
+                  "src": "2185:17:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 421,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2185:7:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2184:19:17"
+            },
+            "scope": 484,
+            "src": "2006:198:17",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 425,
+              "nodeType": "StructuredDocumentation",
+              "src": "2208:384:17",
+              "text": " @notice Create a VRF subscription.\n @return subId - A unique subscription id.\n @dev You can manage the consumer set dynamically with addConsumer/removeConsumer.\n @dev Note to fund the subscription, use transferAndCall. For example\n @dev  LINKTOKEN.transferAndCall(\n @dev    address(COORDINATOR),\n @dev    amount,\n @dev    abi.encode(subId));"
+            },
+            "functionSelector": "a21a23e4",
+            "id": 430,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createSubscription",
+            "nameLocation": "2604:18:17",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 426,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2622:2:17"
+            },
+            "returnParameters": {
+              "id": 429,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 428,
+                  "mutability": "mutable",
+                  "name": "subId",
+                  "nameLocation": "2650:5:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 430,
+                  "src": "2643:12:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 427,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2643:6:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2642:14:17"
+            },
+            "scope": 484,
+            "src": "2595:62:17",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 431,
+              "nodeType": "StructuredDocumentation",
+              "src": "2661:381:17",
+              "text": " @notice Get a VRF subscription.\n @param subId - ID of the subscription\n @return balance - LINK balance of the subscription in juels.\n @return reqCount - number of requests for this subscription, determines fee tier.\n @return owner - owner of the subscription.\n @return consumers - list of consumer address which are able to use this subscription."
+            },
+            "functionSelector": "a47c7696",
+            "id": 445,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getSubscription",
+            "nameLocation": "3054:15:17",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 434,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 433,
+                  "mutability": "mutable",
+                  "name": "subId",
+                  "nameLocation": "3077:5:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 445,
+                  "src": "3070:12:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 432,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3070:6:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3069:14:17"
+            },
+            "returnParameters": {
+              "id": 444,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 436,
+                  "mutability": "mutable",
+                  "name": "balance",
+                  "nameLocation": "3133:7:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 445,
+                  "src": "3126:14:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint96",
+                    "typeString": "uint96"
+                  },
+                  "typeName": {
+                    "id": 435,
+                    "name": "uint96",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3126:6:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint96",
+                      "typeString": "uint96"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 438,
+                  "mutability": "mutable",
+                  "name": "reqCount",
+                  "nameLocation": "3155:8:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 445,
+                  "src": "3148:15:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 437,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3148:6:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 440,
+                  "mutability": "mutable",
+                  "name": "owner",
+                  "nameLocation": "3179:5:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 445,
+                  "src": "3171:13:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 439,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3171:7:17",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 443,
+                  "mutability": "mutable",
+                  "name": "consumers",
+                  "nameLocation": "3209:9:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 445,
+                  "src": "3192:26:17",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 441,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "3192:7:17",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 442,
+                    "nodeType": "ArrayTypeName",
+                    "src": "3192:9:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3118:106:17"
+            },
+            "scope": 484,
+            "src": "3045:180:17",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 446,
+              "nodeType": "StructuredDocumentation",
+              "src": "3229:164:17",
+              "text": " @notice Request subscription owner transfer.\n @param subId - ID of the subscription\n @param newOwner - proposed new owner of the subscription"
+            },
+            "functionSelector": "04c357cb",
+            "id": 453,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "requestSubscriptionOwnerTransfer",
+            "nameLocation": "3405:32:17",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 451,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 448,
+                  "mutability": "mutable",
+                  "name": "subId",
+                  "nameLocation": "3445:5:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 453,
+                  "src": "3438:12:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 447,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3438:6:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 450,
+                  "mutability": "mutable",
+                  "name": "newOwner",
+                  "nameLocation": "3460:8:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 453,
+                  "src": "3452:16:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 449,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3452:7:17",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3437:32:17"
+            },
+            "returnParameters": {
+              "id": 452,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3478:0:17"
+            },
+            "scope": 484,
+            "src": "3396:83:17",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 454,
+              "nodeType": "StructuredDocumentation",
+              "src": "3483:212:17",
+              "text": " @notice Request subscription owner transfer.\n @param subId - ID of the subscription\n @dev will revert if original owner of subId has\n not requested that msg.sender become the new owner."
+            },
+            "functionSelector": "82359740",
+            "id": 459,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "acceptSubscriptionOwnerTransfer",
+            "nameLocation": "3707:31:17",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 457,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 456,
+                  "mutability": "mutable",
+                  "name": "subId",
+                  "nameLocation": "3746:5:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 459,
+                  "src": "3739:12:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 455,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3739:6:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3738:14:17"
+            },
+            "returnParameters": {
+              "id": 458,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3761:0:17"
+            },
+            "scope": 484,
+            "src": "3698:64:17",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 460,
+              "nodeType": "StructuredDocumentation",
+              "src": "3766:170:17",
+              "text": " @notice Add a consumer to a VRF subscription.\n @param subId - ID of the subscription\n @param consumer - New consumer which can use the subscription"
+            },
+            "functionSelector": "7341c10c",
+            "id": 467,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addConsumer",
+            "nameLocation": "3948:11:17",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 465,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 462,
+                  "mutability": "mutable",
+                  "name": "subId",
+                  "nameLocation": "3967:5:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 467,
+                  "src": "3960:12:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 461,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3960:6:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 464,
+                  "mutability": "mutable",
+                  "name": "consumer",
+                  "nameLocation": "3982:8:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 467,
+                  "src": "3974:16:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 463,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3974:7:17",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3959:32:17"
+            },
+            "returnParameters": {
+              "id": 466,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "4000:0:17"
+            },
+            "scope": 484,
+            "src": "3939:62:17",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 468,
+              "nodeType": "StructuredDocumentation",
+              "src": "4005:172:17",
+              "text": " @notice Remove a consumer from a VRF subscription.\n @param subId - ID of the subscription\n @param consumer - Consumer to remove from the subscription"
+            },
+            "functionSelector": "9f87fad7",
+            "id": 475,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "removeConsumer",
+            "nameLocation": "4189:14:17",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 473,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 470,
+                  "mutability": "mutable",
+                  "name": "subId",
+                  "nameLocation": "4211:5:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 475,
+                  "src": "4204:12:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 469,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4204:6:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 472,
+                  "mutability": "mutable",
+                  "name": "consumer",
+                  "nameLocation": "4226:8:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 475,
+                  "src": "4218:16:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 471,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4218:7:17",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4203:32:17"
+            },
+            "returnParameters": {
+              "id": 474,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "4244:0:17"
+            },
+            "scope": 484,
+            "src": "4180:65:17",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 476,
+              "nodeType": "StructuredDocumentation",
+              "src": "4249:140:17",
+              "text": " @notice Cancel a subscription\n @param subId - ID of the subscription\n @param to - Where to send the remaining LINK to"
+            },
+            "functionSelector": "d7ae1d30",
+            "id": 483,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "cancelSubscription",
+            "nameLocation": "4401:18:17",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 481,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 478,
+                  "mutability": "mutable",
+                  "name": "subId",
+                  "nameLocation": "4427:5:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 483,
+                  "src": "4420:12:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 477,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4420:6:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 480,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nameLocation": "4442:2:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 483,
+                  "src": "4434:10:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 479,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4434:7:17",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4419:26:17"
+            },
+            "returnParameters": {
+              "id": 482,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "4454:0:17"
+            },
+            "scope": 484,
+            "src": "4392:63:17",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 485,
+        "src": "57:4400:17",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:4426:17"
+  },
+  "bytecode": "",
+  "bytecodeSha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.8.13+commit.abaa5c0e"
+  },
+  "contractName": "VRFCoordinatorV2Interface",
+  "coverageMap": {
+    "branches": {},
+    "statements": {}
+  },
+  "dependencies": [],
+  "deployedBytecode": "",
+  "deployedSourceMap": "",
+  "language": "Solidity",
+  "natspec": {
+    "kind": "dev",
+    "methods": {
+      "acceptSubscriptionOwnerTransfer(uint64)": {
+        "details": "will revert if original owner of subId has not requested that msg.sender become the new owner.",
+        "notice": "Request subscription owner transfer.",
+        "params": {
+          "subId": "- ID of the subscription"
+        }
+      },
+      "addConsumer(uint64,address)": {
+        "notice": "Add a consumer to a VRF subscription.",
+        "params": {
+          "consumer": "- New consumer which can use the subscription",
+          "subId": "- ID of the subscription"
+        }
+      },
+      "cancelSubscription(uint64,address)": {
+        "notice": "Cancel a subscription",
+        "params": {
+          "subId": "- ID of the subscription",
+          "to": "- Where to send the remaining LINK to"
+        }
+      },
+      "createSubscription()": {
+        "details": "You can manage the consumer set dynamically with addConsumer/removeConsumer.Note to fund the subscription, use transferAndCall. For exampleLINKTOKEN.transferAndCall(address(COORDINATOR),amount,abi.encode(subId));",
+        "notice": "Create a VRF subscription.",
+        "returns": {
+          "subId": "- A unique subscription id."
+        }
+      },
+      "getRequestConfig()": {
+        "notice": "Get configuration relevant for making requests",
+        "returns": {
+          "_0": "minimumRequestConfirmations global min for request confirmations",
+          "_1": "maxGasLimit global max for request gas limit",
+          "_2": "s_provingKeyHashes list of registered key hashes"
+        }
+      },
+      "getSubscription(uint64)": {
+        "notice": "Get a VRF subscription.",
+        "params": {
+          "subId": "- ID of the subscription"
+        },
+        "returns": {
+          "balance": "- LINK balance of the subscription in juels.",
+          "consumers": "- list of consumer address which are able to use this subscription.",
+          "owner": "- owner of the subscription.",
+          "reqCount": "- number of requests for this subscription, determines fee tier."
+        }
+      },
+      "removeConsumer(uint64,address)": {
+        "notice": "Remove a consumer from a VRF subscription.",
+        "params": {
+          "consumer": "- Consumer to remove from the subscription",
+          "subId": "- ID of the subscription"
+        }
+      },
+      "requestRandomWords(bytes32,uint64,uint16,uint32,uint32)": {
+        "notice": "Request a set of random words.",
+        "params": {
+          "callbackGasLimit": "- How much gas you'd like to receive in your fulfillRandomWords callback. Note that gasleft() inside fulfillRandomWords may be slightly less than this amount because of gas used calling the function (argument decoding etc.), so you may need to request slightly more than you expect to have inside fulfillRandomWords. The acceptable range is [0, maxGasLimit]",
+          "keyHash": "- Corresponds to a particular oracle job which uses that key for generating the VRF proof. Different keyHash's have different gas price ceilings, so you can select a specific one to bound your maximum per request cost.",
+          "minimumRequestConfirmations": "- How many blocks you'd like the oracle to wait before responding to the request. See SECURITY CONSIDERATIONS for why you may want to request more. The acceptable range is [minimumRequestBlockConfirmations, 200].",
+          "numWords": "- The number of uint256 random values you'd like to receive in your fulfillRandomWords callback. Note these numbers are expanded in a secure way by the VRFCoordinator from a single random value supplied by the oracle.",
+          "subId": "- The ID of the VRF subscription. Must be funded with the minimum subscription balance required for the selected keyHash."
+        },
+        "returns": {
+          "requestId": "- A unique identifier of the request. Can be used to match a request to a response in fulfillRandomWords."
+        }
+      },
+      "requestSubscriptionOwnerTransfer(uint64,address)": {
+        "notice": "Request subscription owner transfer.",
+        "params": {
+          "newOwner": "- proposed new owner of the subscription",
+          "subId": "- ID of the subscription"
+        }
+      }
+    },
+    "version": 1
+  },
+  "offset": [
+    57,
+    4457
+  ],
+  "opcodes": "",
+  "pcMap": {},
+  "sha1": "41b91e37df630b5bc1df5688a22ab3bd453844fd",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ninterface VRFCoordinatorV2Interface {\n  /**\n   * @notice Get configuration relevant for making requests\n   * @return minimumRequestConfirmations global min for request confirmations\n   * @return maxGasLimit global max for request gas limit\n   * @return s_provingKeyHashes list of registered key hashes\n   */\n  function getRequestConfig()\n    external\n    view\n    returns (\n      uint16,\n      uint32,\n      bytes32[] memory\n    );\n\n  /**\n   * @notice Request a set of random words.\n   * @param keyHash - Corresponds to a particular oracle job which uses\n   * that key for generating the VRF proof. Different keyHash's have different gas price\n   * ceilings, so you can select a specific one to bound your maximum per request cost.\n   * @param subId  - The ID of the VRF subscription. Must be funded\n   * with the minimum subscription balance required for the selected keyHash.\n   * @param minimumRequestConfirmations - How many blocks you'd like the\n   * oracle to wait before responding to the request. See SECURITY CONSIDERATIONS\n   * for why you may want to request more. The acceptable range is\n   * [minimumRequestBlockConfirmations, 200].\n   * @param callbackGasLimit - How much gas you'd like to receive in your\n   * fulfillRandomWords callback. Note that gasleft() inside fulfillRandomWords\n   * may be slightly less than this amount because of gas used calling the function\n   * (argument decoding etc.), so you may need to request slightly more than you expect\n   * to have inside fulfillRandomWords. The acceptable range is\n   * [0, maxGasLimit]\n   * @param numWords - The number of uint256 random values you'd like to receive\n   * in your fulfillRandomWords callback. Note these numbers are expanded in a\n   * secure way by the VRFCoordinator from a single random value supplied by the oracle.\n   * @return requestId - A unique identifier of the request. Can be used to match\n   * a request to a response in fulfillRandomWords.\n   */\n  function requestRandomWords(\n    bytes32 keyHash,\n    uint64 subId,\n    uint16 minimumRequestConfirmations,\n    uint32 callbackGasLimit,\n    uint32 numWords\n  ) external returns (uint256 requestId);\n\n  /**\n   * @notice Create a VRF subscription.\n   * @return subId - A unique subscription id.\n   * @dev You can manage the consumer set dynamically with addConsumer/removeConsumer.\n   * @dev Note to fund the subscription, use transferAndCall. For example\n   * @dev  LINKTOKEN.transferAndCall(\n   * @dev    address(COORDINATOR),\n   * @dev    amount,\n   * @dev    abi.encode(subId));\n   */\n  function createSubscription() external returns (uint64 subId);\n\n  /**\n   * @notice Get a VRF subscription.\n   * @param subId - ID of the subscription\n   * @return balance - LINK balance of the subscription in juels.\n   * @return reqCount - number of requests for this subscription, determines fee tier.\n   * @return owner - owner of the subscription.\n   * @return consumers - list of consumer address which are able to use this subscription.\n   */\n  function getSubscription(uint64 subId)\n    external\n    view\n    returns (\n      uint96 balance,\n      uint64 reqCount,\n      address owner,\n      address[] memory consumers\n    );\n\n  /**\n   * @notice Request subscription owner transfer.\n   * @param subId - ID of the subscription\n   * @param newOwner - proposed new owner of the subscription\n   */\n  function requestSubscriptionOwnerTransfer(uint64 subId, address newOwner) external;\n\n  /**\n   * @notice Request subscription owner transfer.\n   * @param subId - ID of the subscription\n   * @dev will revert if original owner of subId has\n   * not requested that msg.sender become the new owner.\n   */\n  function acceptSubscriptionOwnerTransfer(uint64 subId) external;\n\n  /**\n   * @notice Add a consumer to a VRF subscription.\n   * @param subId - ID of the subscription\n   * @param consumer - New consumer which can use the subscription\n   */\n  function addConsumer(uint64 subId, address consumer) external;\n\n  /**\n   * @notice Remove a consumer from a VRF subscription.\n   * @param subId - ID of the subscription\n   * @param consumer - Consumer to remove from the subscription\n   */\n  function removeConsumer(uint64 subId, address consumer) external;\n\n  /**\n   * @notice Cancel a subscription\n   * @param subId - ID of the subscription\n   * @param to - Where to send the remaining LINK to\n   */\n  function cancelSubscription(uint64 subId, address to) external;\n}\n",
+  "sourceMap": "",
+  "sourcePath": "/home/blackyinsol/.brownie/packages/smartcontractkit/chainlink-brownie-contracts@0.4.1/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol",
+  "type": "interface"
+}

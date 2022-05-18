@@ -1,0 +1,1 @@
+This dir is for smart contract interface (ABI goes here ?), delete it when adding new file
