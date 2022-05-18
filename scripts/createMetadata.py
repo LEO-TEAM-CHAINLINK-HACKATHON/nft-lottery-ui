@@ -10,7 +10,7 @@ classes = ["KING", "KNIGHT", "PRINCESS"]
 number_of_classes = len(classes)
 classes_mapping = {0: "KING", 1: "KNIGHT", 2: "PRINCESS"}
 attribution = {
-    0: "Designed by macrovector / Freepik",
+    0: "Designed by macrovector - Freepik",
     1: "Knight vector created by catalyststuff - www.freepik.com",
     2: "Princess cartoon vector created by brgfx - www.freepik.com",
 }

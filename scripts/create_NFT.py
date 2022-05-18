@@ -9,7 +9,7 @@ classes_to_uri = {
 
 nft_classes = ["KING", "KNIGHT", "PRINCESS"]
 
-lottery_id = 1  # The lottery_id is defined every time the lottery starts. Frist lottery id = 1,  # second lottery id = 2... etc
+lottery_id = 0  # The lottery_id is defined every time the lottery starts. Frist lottery id = 1,  # second lottery id = 2... etc
 
 prize_id = lottery_id
 
@@ -25,7 +25,7 @@ def main():
     account = get_account()
     NFT_Collection = NFTCollection[-1]
     print(NFT_Collection)
-    print(classes_to_uri[nft_classes[prize_id]])
+    print(tokenURI)
     transaction = NFT_Collection.safeMint(
         account,
         tokenURI,
@@ -33,5 +33,5 @@ def main():
     )
     transaction.wait(1)
     print(
-        f"Awesome! You can view your NFT at {OPENSEA_URL.format(NFT_Collection.address, NFT_Collection.retrieveTokenId())}"
+        f"Awesome! You can view your NFT at {OPENSEA_URL.format(NFT_Collection.address, NFT_Collection.retrieveTokenId() - 1)}"
     )
