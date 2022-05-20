@@ -1,4 +1,4 @@
-import { deck } from "./cards";
+import  deck  from "./cards";
 
 
  export default class cardDeck  {
