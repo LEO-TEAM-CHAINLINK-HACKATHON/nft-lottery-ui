@@ -69,7 +69,11 @@ gameDeck.shuffle()
                 <button className="btn fs-3 text-secondary btn-xl btn-light" onClick={() => setShow(!show)}>Try your luck</button>
             </div>
             <div className="section text-center p-3">
-                <button className="btn fs-3 text-secondary btn-xl btn-light" onClick={() => window.location.reload(false) }>Refresh
+                <button className="btn fs-3 text-secondary btn-xl btn-light" onClick={() => {
+                    var initialPage = location.pathname 
+                    window.location.reload() }}>Refresh
+                
+  
                 </button>
             </div>
                 </div>

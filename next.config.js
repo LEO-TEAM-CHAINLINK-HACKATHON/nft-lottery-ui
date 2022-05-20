@@ -26,6 +26,14 @@ images: {
   // imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   // domains: ['wild-dream-9169.on.fleek.co'],
 },
+async rewrites() {
+  return [
+    {
+      source: '/games',
+      destination: 'ipfs.io/ipfs/games',
+    },
+  ]
+},
   module: {
     rules: [
       //...
