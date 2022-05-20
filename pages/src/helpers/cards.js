@@ -71,10 +71,8 @@ import jC from "../../public/images/cards/JC.svg"
 import jH from "../../public/images/cards/JC.svg"
 import jD from "../../public/images/cards/JC.svg"
 
-import deckBack from "../../public/images/cards/deckBack.svg"
 
-
-export const deck = [ 
+ const deck = [ 
     {
         id: aC,
         name: "aC",
@@ -351,3 +349,5 @@ export const deck = [
     },
    
 ] 
+
+export default deck;
