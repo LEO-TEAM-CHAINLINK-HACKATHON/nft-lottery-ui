@@ -46,21 +46,21 @@ gameDeck.shuffle()
             <div className="container d-flex justify-content-around flex-lg-row flex-column">
 
                 <div className="se]ction d-flex p-5 justify-content-center align-items-center">
-                    <Image src={deckBack} alt="deckBack" height={320} width={220} layout="fixed" loader={myLoader} />
+                    <Image src={deckBack} alt="deckBack" height={320} width={220}  loader={myLoader} />
                 </div>
             <div className="section p-5 d-flex flex-row align-self-center flex-lg-column">
                 
                 <div  className= {show ? "d-block container p-2 p-lg-5" : "d-none"}>
                     {card  &&
                         
-                <Image src={card} alt="card" height={320} width={220} layout="fixed" loader={myLoader}/>
+                <Image src={card} alt="card" height={320} width={220}  loader={myLoader}/>
                     }
                 </div>
                 <div className={show ? "d-block container p-2 p-lg-5" : "d-none"}>
                     { 
                         playerCard &&
 
-                <Image src={playerCard} alt="card" height={320} width={220} layout="fixed"loader={myLoader} />
+                <Image src={playerCard} alt="card" height={320} width={220} loader={myLoader} />
                     }
                 </div>
             </div>
