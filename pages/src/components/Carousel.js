@@ -5,10 +5,9 @@ import art2 from "../../public/image2vector (1).svg"
 import art3 from "../../public/image2vector (3).svg"
 import art4 from "../../public/vectordesign (4).svg"
 import Carousel from "react-bootstrap/Carousel"
-
-const myLoader = ({ src }) => {
-    return `${src}`;
-  };
+const myLoader = ({ src,width,quality }) => {
+  return `${src}?w=${width}&q=${quality || 75}`};
+  
  const CarouselItem = () => {
     return (
     <div className="section mt-4">
