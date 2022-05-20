@@ -37,9 +37,12 @@ gameDeck.shuffle()
      
     return (
         <div className="section">
+            
+
             <div className="container">
                 <h1 className="text-white  display-2 fw-bold text-center m-4">Games</h1>
             </div>
+                <div className="col-lg-8">
             <div className="container d-flex justify-content-around flex-lg-row flex-column">
 
                 <div className="se]ction d-flex p-5 justify-content-center align-items-center">
@@ -69,7 +72,9 @@ gameDeck.shuffle()
                 <button className="btn fs-3 text-secondary btn-xl btn-light" onClick={() => window.location.reload(false) }>Refresh
                 </button>
             </div>
-        </div>
+                </div>
+            </div>
+        
     )
 }
 
