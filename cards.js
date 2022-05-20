@@ -1,75 +1,75 @@
-import aS from "../../public/images/cards/AS.svg"
-import aC from "../../public/images/cards/AC.svg"
-import aH from "../../public/images/cards/AH.svg"
-import aD from "../../public/images/cards/AD.svg"
+import aS from "./pages/public/images/cards/AS.svg"
+import aC from "./pages/public/images/cards/AC.svg"
+import aH from "./pages/public/images/cards/AH.svg"
+import aD from "./pages/public/images/cards/AD.svg"
 
-import twoS from "../../public/images/cards/Atlas_deck_2_of_spades.svg"
-import twoC from "../../public/images/cards/Atlas_deck_2_of_clubs.svg"
-import twoH from "../../public/images/cards/Atlas_deck_2_of_spades.svg"
-import twoD from "../../public/images/cards/Atlas_deck_2_of_diamonds.svg"
-
-
-import t3S from "../../public/images/cards/Atlas_deck_3_of_spades.svg"
-import t3C from "../../public/images/cards/Atlas_deck_3_of_clubs.svg"
-import t3H from "../../public/images/cards/Atlas_deck_3_of_spades.svg"
-import t3D from "../../public/images/cards/Atlas_deck_3_of_diamonds.svg"
+import twoS from "./pages/public/images/cards/Atlas_deck_2_of_spades.svg"
+import twoC from "./pages/public/images/cards/Atlas_deck_2_of_clubs.svg"
+import twoH from "./pages/public/images/cards/Atlas_deck_2_of_spades.svg"
+import twoD from "./pages/public/images/cards/Atlas_deck_2_of_diamonds.svg"
 
 
-import fourS from "../../public/images/cards/Atlas_deck_4_of_spades.svg"
-import fourC from "../../public/images/cards/Atlas_deck_4_of_clubs.svg"
-import fourH from "../../public/images/cards/Atlas_deck_4_of_spades.svg"
-import fourD from "../../public/images/cards/Atlas_deck_4_of_diamonds.svg"
+import t3S from "./pages/public/images/cards/Atlas_deck_3_of_spades.svg"
+import t3C from "./pages/public/images/cards/Atlas_deck_3_of_clubs.svg"
+import t3H from "./pages/public/images/cards/Atlas_deck_3_of_spades.svg"
+import t3D from "./pages/public/images/cards/Atlas_deck_3_of_diamonds.svg"
 
 
-import fiveS from "../../public/images/cards/Atlas_deck_5_of_spades.svg"
-import fiveC from "../../public/images/cards/Atlas_deck_5_of_clubs.svg"
-import fiveH from "../../public/images/cards/Atlas_deck_5_of_spades.svg"
-import fiveD from "../../public/images/cards/Atlas_deck_5_of_diamonds.svg"
+import fourS from "./pages/public/images/cards/Atlas_deck_4_of_spades.svg"
+import fourC from "./pages/public/images/cards/Atlas_deck_4_of_clubs.svg"
+import fourH from "./pages/public/images/cards/Atlas_deck_4_of_spades.svg"
+import fourD from "./pages/public/images/cards/Atlas_deck_4_of_diamonds.svg"
 
 
-import sixS from "../../public/images/cards/Atlas_deck_6_of_spades.svg"
-import sixC from "../../public/images/cards/Atlas_deck_6_of_clubs.svg"
-import sixH from "../../public/images/cards/Atlas_deck_6_of_spades.svg"
-import sixD from "../../public/images/cards/Atlas_deck_6_of_diamonds.svg"
+import fiveS from "./pages/public/images/cards/Atlas_deck_5_of_spades.svg"
+import fiveC from "./pages/public/images/cards/Atlas_deck_5_of_clubs.svg"
+import fiveH from "./pages/public/images/cards/Atlas_deck_5_of_spades.svg"
+import fiveD from "./pages/public/images/cards/Atlas_deck_5_of_diamonds.svg"
 
 
-import sevenS from "../../public/images/cards/Atlas_deck_7_of_spades.svg"
-import sevenC from "../../public/images/cards/Atlas_deck_7_of_clubs.svg"
-import sevenH from "../../public/images/cards/Atlas_deck_7_of_spades.svg"
-import sevenD from "../../public/images/cards/Atlas_deck_7_of_diamonds.svg"
+import sixS from "./pages/public/images/cards/Atlas_deck_6_of_spades.svg"
+import sixC from "./pages/public/images/cards/Atlas_deck_6_of_clubs.svg"
+import sixH from "./pages/public/images/cards/Atlas_deck_6_of_spades.svg"
+import sixD from "./pages/public/images/cards/Atlas_deck_6_of_diamonds.svg"
 
 
-import heightS from "../../public/images/cards/Atlas_deck_8_of_spades.svg"
-import heightC from "../../public/images/cards/Atlas_deck_8_of_clubs.svg"
-import heightH from "../../public/images/cards/Atlas_deck_8_of_spades.svg"
-import heightD from "../../public/images/cards/Atlas_deck_8_of_diamonds.svg"
+import sevenS from "./pages/public/images/cards/Atlas_deck_7_of_spades.svg"
+import sevenC from "./pages/public/images/cards/Atlas_deck_7_of_clubs.svg"
+import sevenH from "./pages/public/images/cards/Atlas_deck_7_of_spades.svg"
+import sevenD from "./pages/public/images/cards/Atlas_deck_7_of_diamonds.svg"
 
 
-import nineS from "../../public/images/cards/Atlas_deck_9_of_spades.svg"
-import nineC from "../../public/images/cards/Atlas_deck_9_of_clubs.svg"
-import nineH from "../../public/images/cards/Atlas_deck_9_of_spades.svg"
-import nineD from "../../public/images/cards/Atlas_deck_9_of_diamonds.svg"
+import heightS from "./pages/public/images/cards/Atlas_deck_8_of_spades.svg"
+import heightC from "./pages/public/images/cards/Atlas_deck_8_of_clubs.svg"
+import heightH from "./pages/public/images/cards/Atlas_deck_8_of_spades.svg"
+import heightD from "./pages/public/images/cards/Atlas_deck_8_of_diamonds.svg"
 
 
-import tenS from "../../public/images/cards/Atlas_deck_10_of_spades.svg"
-import tenC from "../../public/images/cards/Atlas_deck_10_of_clubs.svg"
-import tenH from "../../public/images/cards/Atlas_deck_10_of_spades.svg"
-import tenD from "../../public/images/cards/Atlas_deck_10_of_diamonds.svg"
+import nineS from "./pages/public/images/cards/Atlas_deck_9_of_spades.svg"
+import nineC from "./pages/public/images/cards/Atlas_deck_9_of_clubs.svg"
+import nineH from "./pages/public/images/cards/Atlas_deck_9_of_spades.svg"
+import nineD from "./pages/public/images/cards/Atlas_deck_9_of_diamonds.svg"
 
-import kS from "../../public/images/cards/Atlas_deck_king_of_spades.svg"
-import kC from "../../public/images/cards/Atlas_deck_king_of_clubs.svg"
-import kH from "../../public/images/cards/Atlas_deck_king_of_spades.svg"
-import kD from "../../public/images/cards/Atlas_deck_king_of_diamonds.svg"
 
-import qS from "../../public/images/cards/Atlas_deck_queen_of_spades.svg"
-import qC from "../../public/images/cards/Atlas_deck_queen_of_clubs.svg"
-import qH from "../../public/images/cards/Atlas_deck_queen_of_spades.svg"
-import qD from "../../public/images/cards/Atlas_deck_queen_of_diamonds.svg"
+import tenS from "./pages/public/images/cards/Atlas_deck_10_of_spades.svg"
+import tenC from "./pages/public/images/cards/Atlas_deck_10_of_clubs.svg"
+import tenH from "./pages/public/images/cards/Atlas_deck_10_of_spades.svg"
+import tenD from "./pages/public/images/cards/Atlas_deck_10_of_diamonds.svg"
 
-import jS from "../../public/images/cards/JC.svg"
-import jC from "../../public/images/cards/JC.svg"
-import jH from "../../public/images/cards/JC.svg"
-import jD from "../../public/images/cards/JC.svg"
+import kS from "./pages/public/images/cards/Atlas_deck_king_of_spades.svg"
+import kC from "./pages/public/images/cards/Atlas_deck_king_of_clubs.svg"
+import kH from "./pages/public/images/cards/Atlas_deck_king_of_spades.svg"
+import kD from "./pages/public/images/cards/Atlas_deck_king_of_diamonds.svg"
+
+import qS from "./pages/public/images/cards/Atlas_deck_queen_of_spades.svg"
+import qC from "./pages/public/images/cards/Atlas_deck_queen_of_clubs.svg"
+import qH from "./pages/public/images/cards/Atlas_deck_queen_of_spades.svg"
+import qD from "./pages/public/images/cards/Atlas_deck_queen_of_diamonds.svg"
+
+import jS from "./pages/public/images/cards/JC.svg"
+import jC from "./pages/public/images/cards/JC.svg"
+import jH from "./pages/public/images/cards/JC.svg"
+import jD from "./pages/public/images/cards/JC.svg"
 
 
  const deck = [ 
