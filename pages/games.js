@@ -1,5 +1,5 @@
 import Image from "next/image"
-import cardDeck from "../pages/src/helpers/cardDeck"
+import cardDeck from "./src/helpers/cardDeck"
 import  deckBack  from "./public/images/cards/deckBack.svg"
 import { useState, useEffect } from "react";
 
