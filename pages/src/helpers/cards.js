@@ -74,19 +74,280 @@ import jD from "../../public/images/cards/JC.svg"
 import deckBack from "../../public/images/cards/deckBack.svg"
 
 
-export {
-    aC,aD,aH,aS,
-    twoC,twoD,twoH,twoS,
-    t3C,t3D,t3H,t3S,
-    fourC,fourD,fourH,fourS,
-    fiveC,fiveD,fiveH,fiveS,
-    sixC,sixD,sixH,sixS,
-    sevenC,sevenD,sevenH,sevenS,
-    heightC,heightD,heightH,heightS,
-    nineC,nineD,nineH,nineS,
-    tenC,tenD,tenH,tenS,
-    kC,kD,kH,kS,
-    qC,qD,qH,qS,
-    jC,jD,jH,jS,
-    deckBack
-}   
+export const deck = [ 
+    {
+        id: aC,
+        name: "aC",
+        src: aC,
+    },
+    {
+        id: aD,
+        name: "aD",
+        src: aD,
+    },
+    {
+        id: aH,
+        name: "aH",
+        src: aH,
+    },
+    {
+        id: aS,
+        name: "aS",
+        src: aS,
+    },
+    {
+        id: twoC,
+        name: "twoC",
+        src: twoC,
+    },
+    {
+        id: twoD,
+        name: "twoD",
+        src: twoD,
+    },
+    {
+        id: twoH,
+        name: "twoH",
+        src: twoH,
+    },
+    {
+        id: twoS,
+        name: "twoS",
+        src: twoS,
+    },
+    {
+        id: t3C,
+        name: "t3C",
+        src: t3C,
+    },
+    {
+        id: t3D,
+        name: "t3D",
+        src: t3D,
+    },
+    {
+        id: t3H,
+        name: "t3H",
+        src: t3H,
+    },
+    {
+        id: t3S,
+        name: "t3S",
+        src: t3S,
+    },
+   
+    {
+        id: fourC,
+        name: "fourC",
+        src: fourC,
+    },
+   
+    {
+        id: fourD,
+        name: "fourD",
+        src: fourD,
+    },
+   
+    {
+        id: fourH,
+        name: "fourH",
+        src: fourH,
+    },
+   
+    {
+        id: fourS,
+        name: "fourS",
+        src: fourS,
+    },
+    {
+        id: fiveC,
+        name: "fourC",
+        src: fourC,
+    },
+    {
+        id: fiveD,
+        name: "fourD",
+        src: fiveD,
+    },
+    {
+        id: fiveH,
+        name: "fiveH",
+        src: fiveH,
+    },
+    {
+        id: fiveS,
+        name: "fiveS",
+        src: fiveS,
+    },
+    {
+        id: sixC,
+        name: "sixC",
+        src: sixC,
+    },
+    {
+        id: sixD,
+        name: "sixD",
+        src: sixD,
+    },
+    {
+        id:sixH,
+        name: "sixH",
+        src: sixH,
+    },
+    {
+        id:sixS,
+        name: "sixS",
+        src: sixS,
+    },
+    {
+        id:sevenC,
+        name: "sevenC",
+        src: sevenC,
+    },
+    {
+        id:sevenD,
+        name: "sevenD",
+        src: sevenD,
+    },
+    {
+        id:sevenH,
+        name: "sevenH",
+        src: sevenH,
+    },
+    {
+        id:sevenS,
+        name: "sevenS",
+        src: sevenS,
+    },
+    {
+        id:heightC,
+        name: "heightC",
+        src: heightC,
+    },
+    {
+        id:heightD,
+        name: "heightD",
+        src: heightD,
+    },
+    {
+        id:heightH,
+        name: "heightH",
+        src: heightH,
+    },
+    {
+        id:heightS,
+        name: "heightS",
+        src: heightS,
+    },
+    {
+        id:nineC,
+        name: "nineC",
+        src: nineC,
+    },
+    {
+        id:nineD,
+        name: "nineD",
+        src: nineD,
+    },
+    {
+        id:nineH,
+        name: "nineH",
+        src: nineH,
+    },
+    {
+        id:nineS,
+        name: "nineS",
+        src: nineS,
+    },
+    {
+        id:tenC,
+        name: "tenC",
+        src: tenC,
+    },
+    {
+        id:tenD,
+        name: "tenD",
+        src: tenD,
+    },
+    {
+        id:tenH,
+        name: "tenH",
+        src: tenH,
+    },
+    {
+        id:tenS,
+        name: "tenS",
+        src: tenS,
+    },
+   
+    {
+        id:kC,
+        name: "kC",
+        src: kC,
+    },
+   
+    {
+        id:kD,
+        name: "kD",
+        src: kD,
+    },
+   
+    {
+        id:kH,
+        name: "kH",
+        src: kH,
+    },
+   
+    {
+        id:kS,
+        name: "kS",
+        src: kS,
+    },
+    {
+        id:qC,
+        name: "qC",
+        src: qC,
+    },
+   
+    {
+        id:qD,
+        name: "qD",
+        src: qD,
+    },
+   
+    {
+        id:qH,
+        name: "qH",
+        src: qH,
+    },
+   
+    {
+        id:qS,
+        name: "qS",
+        src: qS,
+    },
+    {
+        id:jC,
+        name: "jC",
+        src: jC,
+    },
+   
+    {
+        id:jD,
+        name: "jD",
+        src: jD,
+    },
+   
+    {
+        id:jH,
+        name: "jH",
+        src: jH,
+    },
+   
+    {
+        id:jS,
+        name: "jS",
+        src: jS,
+    },
+   
+] 

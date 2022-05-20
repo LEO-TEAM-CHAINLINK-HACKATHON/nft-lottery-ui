@@ -1,6 +1,6 @@
 import { MoralisProvider } from "react-moralis";
 import { NotificationProvider } from "web3uikit";
-import  Layout  from "./Layout"
+import  Layout  from "./src/components/Layout"
 import "../styles/globals.scss";
 import "../styles/custom.scss";
 
