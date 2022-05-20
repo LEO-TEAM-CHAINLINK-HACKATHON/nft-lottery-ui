@@ -23,13 +23,13 @@ import  deck  from "../../../cards";
 }
 
 
-class Card {
+export class Card {
     constructor(values) {
         this.deck = values
     }
 }
 
-const freshDeck = () => {
+export const freshDeck = () => {
     
         return deck.map(item => {
             return new Card(item)
