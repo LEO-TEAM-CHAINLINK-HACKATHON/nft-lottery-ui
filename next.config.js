@@ -30,7 +30,7 @@ async rewrites() {
   return [
     {
       source: '/games',
-      destination: 'ipfs.io/ipfs/games',
+      destination: '/ipfs.io/ipfs/games',
     },
   ]
 },
