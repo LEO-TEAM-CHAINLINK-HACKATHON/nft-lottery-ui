@@ -70,7 +70,7 @@ gameDeck.shuffle()
             </div>
             <div className="section text-center p-3">
                 <button className="btn fs-3 text-secondary btn-xl btn-light" 
-                // onClick={() => router.push('ipfs.io/ipfs/')}
+                 onClick={() => router.push('/ipfs/games')}
                 >Refresh
                 
   

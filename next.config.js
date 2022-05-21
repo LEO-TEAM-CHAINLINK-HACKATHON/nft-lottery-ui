@@ -17,7 +17,7 @@ sassOptions: {
     styledComponents: true,
   },
 },
-basePath: '/ipfs.io/ipfs',
+
 images: {
   loader: "custom",
   disableStaticImages: true,
