@@ -40,10 +40,7 @@ function Navbar() {
             <Link href="/waffles" passHref className="nav-item">
               <a className="nav-link"  onClick={ ()=> setShow(!show) }>Raffles</a>
             </Link>
-            <Link className="nav-item" href="/games" onClick={() => router.push({
-            pathname: "/ipfs.io/ipfs",
-            hash: "hash"
-          })}>
+            <Link className="nav-item" href="/games">
               <a className="nav-link"  onClick={ ()=> setShow(!show) }>Games</a>
             </Link>
             <Link className="nav-item" href="/how-to-play">
