@@ -70,7 +70,7 @@ gameDeck.shuffle()
             </div>
             <div className="section text-center p-3">
                 <button className="btn fs-3 text-secondary btn-xl btn-light" 
-                 onClick={() => router.push(`${router.asPath}/games`)}
+                 onClick={() => router.push('https://wild-dream-9169.on.fleek.co')}
                 >Refresh
                 
   
