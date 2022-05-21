@@ -2,10 +2,8 @@ import Link from "next/link";
 import { HiOutlineTicket } from "react-icons/hi";
 import {useState} from "react";
 import { useRouter } from "next/router"
-import { HashRouter } from "react-router-dom"
 function Navbar() {
     const [show, setShow] = useState(false);
-    const router = useRouter()
   return (
     <nav
       className="navbar navbar-expand-md navbar-dark bg-dark fixed-top"
@@ -41,8 +39,7 @@ function Navbar() {
             <Link href="/waffles" passHref className="nav-item">
               <a className="nav-link"  onClick={ ()=> setShow(!show) }>Raffles</a>
             </Link>
-            {/* <HashRouter basename="ipfs.io/ipfs/$hash"/> */}
-            <Link className="nav-item" href="/games" to="ipfs.io/ipfs/games">
+            <Link className="nav-item" href="/games" to="/ipfs.io/ipfs/games">
               <a className="nav-link"  onClick={ ()=> setShow(!show) }>Games</a>
             </Link>
             <Link className="nav-item" href="/how-to-play">

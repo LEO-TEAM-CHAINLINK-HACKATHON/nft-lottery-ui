@@ -3,7 +3,6 @@ import { NotificationProvider } from "web3uikit";
 import  Layout  from "./src/components/Layout"
 import "../styles/globals.scss";
 import "../styles/custom.scss";
-
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
