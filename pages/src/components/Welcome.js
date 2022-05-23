@@ -3,15 +3,15 @@ import { FaSmile } from "react-icons/fa"
 
 function Welcome  ({ isWeb3Enabled }) {
   return (
-    <div className="section">
+    <div className="section positon-relative m-3">
       <div className="container">
-        <h1 className="text-white text-center" id="/">
+        <h1 className="text-white text-center m-4" id="/">
           The Raffle House
         </h1>
       </div>
-      <div className="section text-center mt-2">
+      <div className="section  text-center m-auto position-absolute top-25 start-50 translate-middle">
         {isWeb3Enabled && (
-          <h3 className="text-white">
+          <h3 className="text-white m-5">
             Welcome
             <span>
               {" "}
@@ -20,14 +20,14 @@ function Welcome  ({ isWeb3Enabled }) {
           </h3>
         )}
       
+      </div>
         <div
-        className="mt-2 d-flex justify-content-center"
+        className="mt-5 d-flex justify-content-center"
         >
         <ConnectButton
           moralisAuth={false}
         />
          </div>
-      </div>
     </div>
   );
 };

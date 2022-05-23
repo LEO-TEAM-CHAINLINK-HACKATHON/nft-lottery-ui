@@ -37,7 +37,7 @@ function Navbar() {
             <Link href="/" passHref className="nav-item" >
               <a className="nav-link"  onClick={ ()=> setShow(!show) }>Home</a>
             </Link>
-            <Link href="/waffles" passHref className="nav-item">
+            <Link href="/raffles" passHref className="nav-item">
               <a className="nav-link"  onClick={ ()=> setShow(!show) }>Raffles</a>
             </Link>
             <Link className="nav-item" href="/games">

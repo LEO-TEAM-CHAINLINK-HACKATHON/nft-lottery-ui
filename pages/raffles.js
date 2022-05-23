@@ -7,7 +7,7 @@ import RaffleItem from "./src/components/raffle/RaffleItem"
     return (
         <div className="section waffle">
             <div className="container">
-            <h1 className="text-center text-white">Raffles</h1>
+            <h1 className="text-center text-white m-3">Raffles</h1>
             </div>
            <FeatBanner />
            <RaffleItem />

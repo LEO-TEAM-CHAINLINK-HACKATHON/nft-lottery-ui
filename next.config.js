@@ -8,7 +8,10 @@ const nextConfig = withImages({
   trailingSlash: true,
   exportPathMap: function () {
     return {
-      '/': {page:'/'}  
+      '/': {page:'/'}, 
+      '/raffles': {page:'/raffles'}, 
+      '/games': {page:'/games'},  
+      '/how-to-play': {page:'/how-to-play'},  
     };
 },
 sassOptions: {
